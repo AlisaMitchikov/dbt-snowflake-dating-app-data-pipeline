@@ -41,7 +41,10 @@ This dbt project processes and transforms dating app data using Snowflake. Raw d
 - **Analysis**: Conducted data analysis for hed-hoc needs.
 - **Documentation**: Maintained comprehensive dbt documentation.
 
-* Please find the attached data flow diagram.
+## Please note:
+
+* Please find the attached data flow diagram in the 'models' folder.
+* Please find the source tables ddl and data scripts in the models 'source_sql_scripts' folder.
 
 
 
