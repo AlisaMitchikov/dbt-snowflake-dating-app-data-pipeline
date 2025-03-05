@@ -1,0 +1,23 @@
+models:
+# stg
+  - name: stg_dim_customers
+    description: stg layer for dwh_dim_customers table
+    columns:
+      - name: USER_ID
+        tests:
+          - string_not_empty
+          - unique
+          - not_null
+# dwh          
+  - name: dwh_dim_cities
+    description: DWH table containing information about cities
+  - name: dwh_dim_customers
+    description: DWH table containing information about customers
+  - name: dwh_dim_genders
+    description: DWH table containing information about gender classifications
+  - name: dwh_fact_activity
+    description: DWH table containing information about user activities, tracking interactions and events within the app
+  - name: dwh_fact_matches
+    description: DWH table containing information about matched events
+  - name: dwh_fact_revenue
+    description: DWH table containing information about revenue           

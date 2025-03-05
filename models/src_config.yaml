@@ -1,0 +1,25 @@
+sources:
+  - name: DATALAKE
+    database: FIRST_SNOWFLAKE_DATABASE
+    schema: DATALAKE
+    tables:
+        - name: CUSTOMERS
+          identifier: CUSTOMERS       
+        - name: CITIES
+          identifier: CITIES       
+        - name: GENDERS
+          identifier: GENDERS    
+        - name: APP_EVENTS
+          identifier: APP_EVENTS  
+          freshness:
+            warn_after: {count: 1, period: day}
+            error_after: {count: 3, period: day}
+          loaded_at_field: TIMESTAMP                                                              
+  - name: DWH
+    database: FIRST_SNOWFLAKE_DATABASE
+    schema: DWH
+    tables:
+        - name: DWH_FACT_ACTIVITY
+          identifier: DWH_FACT_ACTIVITY       
+        - name: DWH_FACT_MATCHES
+          identifier: DWH_FACT_MATCHES            
