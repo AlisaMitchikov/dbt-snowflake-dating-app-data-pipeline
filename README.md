@@ -3,7 +3,7 @@ This dbt project processes and transforms dating app data using Snowflake. Raw d
 
 ## Data Flow
 - **Source Data (DATALAKE)**: Raw data from app events, users, cities, genders, and currency rates.
-- **Transformed Data (DWH)**: Dimension and fact tables and vies optimized for analysis.
+- **Transformed Data (DWH)**: Dimension and fact tables and views optimized for analysis.
 - **Aggregations (AGG)**: Aggregated KPIs tables.
 
 ## Tables
