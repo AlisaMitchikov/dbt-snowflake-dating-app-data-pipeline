@@ -1,5 +1,6 @@
 ## Overview
-This dbt project processes and transforms dating app data using Snowflake. Raw data from the **DATALAKE** schema is cleaned and structured into **DWH** tables and views for analytics within aggregated KPIs tables stored in **AGG**.
+This dbt project processes and transforms dating app data using Snowflake.
+Raw data from the **DATALAKE** schema is cleaned and structured into **DWH** schema tables and views, while aggregated KPI tables are stored in the **AGG** schema.
 
 ## Data Flow
 - **Source Data (DATALAKE)**: Raw data from app events, users, cities, genders, and currency rates.
@@ -40,6 +41,9 @@ This dbt project processes and transforms dating app data using Snowflake. Raw d
 - **Jinja**: Used for querying sources and models, macros, and tests.
 - **Analysis**: Conducted data analysis for hed-hoc needs.
 - **Documentation**: Maintained comprehensive dbt documentation.
+
+## **Scheduling:**
+To schedule this dbt project, use the Airflow orchestration project available at XXXX.com.!!!!!!!!!
 
 ## **Please Note:**
 - The **data flow diagram** illustrating the end-to-end transformation process can be found in the **`models/data_flow_diagram.jpg`** file.
